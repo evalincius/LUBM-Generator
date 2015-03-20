@@ -645,7 +645,7 @@ public class Generator {
    * NOTE: Use univIndex instead of instances[CS_C_UNIV].count till generateASection(CS_C_UNIV, ) is invoked.
    */
   private void _generateDept(int univIndex, int index) {
-    String fileName = System.getProperty("user.dir") + "\\" +
+    String fileName = System.getProperty("user.dir") + "/" +
         _getName(CS_C_UNIV, univIndex) + INDEX_DELIMITER + index + _getFileSuffix();
     writer_.startFile(fileName);
 
